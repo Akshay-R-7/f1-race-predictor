@@ -1,0 +1,8 @@
+{
+  "python_s_per_race": 0.004040406299987808,
+  "python_100k_estimate_s": 404.0406299987808,
+  "cpp_1_threads_100k_s": 11.559017200022936,
+  "cpp_8_threads_100k_s": 3.478673200123012,
+  "speedup_1_thread": 34.95458333585481,
+  "speedup_8_threads": 116.14791236627033
+}

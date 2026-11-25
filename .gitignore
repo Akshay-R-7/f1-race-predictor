@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+cpp/build/
+f1sim/_racesim*.so
+web/node_modules/
+web/dist/
+fastf1_cache/
+jolpica_cache/
+*.sqlite
+rejected_rows.jsonl
+.venv/
+*.pyd
+forecasts/

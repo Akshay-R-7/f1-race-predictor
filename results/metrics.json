@@ -1,0 +1,205 @@
+{
+  "data": "f1.sqlite",
+  "fit_seasons": "2023-2023",
+  "validation_season": 2024,
+  "test_seasons": "2025-2025",
+  "test_races": 24,
+  "sims_per_race": 100000,
+  "simulator": "C++",
+  "simulation_seconds_total": 106.0,
+  "simulator_only": {
+    "top1": 0.4583,
+    "log_loss": 1.2837,
+    "brier": 0.6363
+  },
+  "model": {
+    "top1": 0.4583,
+    "log_loss": 1.2837,
+    "brier": 0.6363
+  },
+  "baseline_pole_wins": {
+    "top1": 0.6667,
+    "log_loss": 3.072,
+    "brier": 0.6653
+  },
+  "baseline_grid_prior": {
+    "top1": 0.6667,
+    "log_loss": 1.3806,
+    "brier": 0.6
+  },
+  "calibration": [
+    {
+      "bin": "0.00-0.05",
+      "n": 357,
+      "mean_predicted": 0.005640700280112046,
+      "actual_rate": 0.0
+    },
+    {
+      "bin": "0.05-0.10",
+      "n": 38,
+      "mean_predicted": 0.07258763157894736,
+      "actual_rate": 0.02631578947368421
+    },
+    {
+      "bin": "0.10-0.20",
+      "n": 41,
+      "mean_predicted": 0.14191609756097562,
+      "actual_rate": 0.12195121951219512
+    },
+    {
+      "bin": "0.20-0.30",
+      "n": 22,
+      "mean_predicted": 0.23415136363636366,
+      "actual_rate": 0.36363636363636365
+    },
+    {
+      "bin": "0.30-0.50",
+      "n": 17,
+      "mean_predicted": 0.38726823529411764,
+      "actual_rate": 0.47058823529411764
+    },
+    {
+      "bin": "0.50-0.70",
+      "n": 3,
+      "mean_predicted": 0.5581633333333333,
+      "actual_rate": 0.6666666666666666
+    }
+  ],
+  "calibration_error": 0.0192,
+  "post_processing": {
+    "dnf_logit_shift": -0.20781081169843674,
+    "dnf_val_rate": 0.10893246187363835,
+    "deg_source": "team_average",
+    "deg_val_mae_model": null,
+    "deg_val_mae_team_average": null,
+    "pace_sd": 0.5709480856356463,
+    "train_seconds": 10.3,
+    "epochs": 28,
+    "simulator": {
+      "overtake_scale": 1.6,
+      "grid_gap": 3.0,
+      "sd_scale": 1.0
+    },
+    "simulator_tuning_trials": [
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 0.5,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.6253
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 0.5,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.6758
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 1.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.5915
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 1.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.6532
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 2.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.6057
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 2.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5964
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 3.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.6456
+      },
+      {
+        "overtake_scale": 1.0,
+        "grid_gap": 3.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5673
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 0.5,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.581
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 0.5,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5669
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 1.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.5607
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 1.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5208
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 2.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.6074
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 2.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5179
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 3.0,
+        "sd_scale": 0.5,
+        "val_log_loss": 1.624
+      },
+      {
+        "overtake_scale": 1.6,
+        "grid_gap": 3.0,
+        "sd_scale": 1.0,
+        "val_log_loss": 1.5057
+      }
+    ],
+    "blend_weight": 1.0,
+    "blend_trials": [
+      {
+        "sim_weight": 0.0,
+        "val_log_loss": 2.0418
+      },
+      {
+        "sim_weight": 0.25,
+        "val_log_loss": 1.8413
+      },
+      {
+        "sim_weight": 0.5,
+        "val_log_loss": 1.7045
+      },
+      {
+        "sim_weight": 0.75,
+        "val_log_loss": 1.6013
+      },
+      {
+        "sim_weight": 1.0,
+        "val_log_loss": 1.5211
+      }
+    ]
+  }
+}

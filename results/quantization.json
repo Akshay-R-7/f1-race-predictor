@@ -1,0 +1,14 @@
+{
+  "float32": {
+    "size_kb": 15.8,
+    "pace_mae_vs_truth": 0.144,
+    "max_pace_diff_vs_keras": 0.0,
+    "batch_latency_ms": 0.428
+  },
+  "int8": {
+    "size_kb": 10.3,
+    "pace_mae_vs_truth": 0.1765,
+    "max_pace_diff_vs_keras": 0.5913,
+    "batch_latency_ms": 0.436
+  }
+}

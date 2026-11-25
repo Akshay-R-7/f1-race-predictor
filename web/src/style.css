@@ -1,0 +1,14 @@
+:root { --bg: #f7f7f8; --fg: #16161a; --muted: #5c5c66; --accent: #e10600; --line: #e2e2e6; --card: #fff; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121214; --fg: #ececf1; --muted: #a0a0ab; --line: #2a2a30; --card: #1b1b1f; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+h1 { margin: 0 0 4px; } h2 { font-size: 1.05rem; margin: 24px 0 8px; }
+.muted { color: var(--muted); margin-top: 0; }
+table { width: 100%; border-collapse: collapse; background: var(--card); margin-top: 8px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+tr.best td { font-weight: 600; } tr.winner td { background: rgba(225, 6, 0, 0.08); }
+.bar { display: inline-block; width: 90px; height: 8px; background: var(--line); margin-right: 8px; vertical-align: middle; }
+.bar span { display: block; height: 100%; background: var(--accent); }
+select { font: inherit; padding: 4px; }
+section + section { margin-top: 28px; }
+@media (max-width: 600px) { th:nth-child(2), td:nth-child(2) { display: none; } }

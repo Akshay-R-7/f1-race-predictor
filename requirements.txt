@@ -1,0 +1,13 @@
+numpy
+pandas
+pydantic>=2
+tensorflow-cpu>=2.16
+scikit-learn
+matplotlib
+fastapi
+uvicorn
+httpx
+pybind11
+pytest
+# for real data (run on a machine with internet access):
+# fastf1
